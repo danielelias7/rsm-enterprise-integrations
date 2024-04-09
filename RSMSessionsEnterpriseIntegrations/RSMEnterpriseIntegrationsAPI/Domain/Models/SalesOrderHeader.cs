@@ -8,7 +8,6 @@ namespace RSMEnterpriseIntegrationsAPI.Domain.Models
         public DateTime DueDate { get; set; } = DateTime.Now;
         public byte Status { get; set; }
         public bool OnlineOrderFlag { get; set; }
-        // public string? SalesOrderNumber { get; set; }
         public int CustomerId { get; set; }
         public int BillToAddressId { get; set; }
         public int ShipToAddressId { get; set; }
@@ -16,7 +15,6 @@ namespace RSMEnterpriseIntegrationsAPI.Domain.Models
         public decimal SubTotal { get; set; } = 0;
         public decimal TaxAmt { get; set; } = 0;
         public decimal Freight { get; set; } = 0;
-        // public decimal TotalDue { get; set; } = 0;
         public DateTime? ModifiedDate { get; set; } = DateTime.Now;
     }
 }
