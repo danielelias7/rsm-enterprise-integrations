@@ -6,8 +6,8 @@
     {
         Task<Product?> GetProductById(int id);
         Task<IEnumerable<Product>> GetAllProducts();
-        Task<int> CreateProduct(Product department);
-        Task<int> UpdateProduct(Product department);
-        Task<int> DeleteProduct(Product department);
+        Task<int> CreateProduct(Product product);
+        Task<int> UpdateProduct(Product product);
+        Task<int> DeleteProduct(Product product);
     }
 }
