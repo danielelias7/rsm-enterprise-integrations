@@ -17,16 +17,16 @@
             builder.Property(e => e.Name).IsRequired();
             builder.Property(e => e.ProductNumber).IsRequired().HasMaxLength(50);
 
-            builder.Property(e => e.MakeFlag).IsRequired();
-            builder.Property(e => e.FinishedGoodsFlag).IsRequired();
-            builder.Property(e => e.SafetyStockLevel).IsRequired();
-            builder.Property(e => e.ReorderPoint).IsRequired();
-            builder.Property(e => e.StandardCost).IsRequired();
-            builder.Property(e => e.ListPrice).IsRequired();
-            builder.Property(e => e.DaysToManufacture).IsRequired();
-            builder.Property(e => e.ProductLine).IsRequired();
-            builder.Property(e => e.Class).IsRequired();
-            builder.Property(e => e.Style).IsRequired();
+            builder.Property(e => e.MakeFlag).HasColumnName("MakeFlag");
+            builder.Property(e => e.FinishedGoodsFlag).HasColumnName("FinishedGoodsFlag");
+            builder.Property(e => e.SafetyStockLevel).HasColumnName("SafetyStockLevel");
+            builder.Property(e => e.ReorderPoint).HasColumnName("ReorderPoint");
+            builder.Property(e => e.StandardCost).HasColumnName("StandardCost");
+            builder.Property(e => e.ListPrice).HasColumnName("ListPrice");
+            builder.Property(e => e.DaysToManufacture).HasColumnName("DaysToManufacture");
+            builder.Property(e => e.ProductLine).HasColumnName("ProductLine");
+            builder.Property(e => e.Class).HasColumnName("Class");
+            builder.Property(e => e.Style).HasColumnName("Style");
         }
     }
 }

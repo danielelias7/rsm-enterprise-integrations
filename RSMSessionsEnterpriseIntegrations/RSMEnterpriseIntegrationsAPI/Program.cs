@@ -41,6 +41,7 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+app.UseMiddleware<BasicAuthMiddleware>();
 
 app.UseMiddleware<ExceptionMiddleware>();
 
